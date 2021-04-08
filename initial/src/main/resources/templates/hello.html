@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <form th:action="@{/profile}" th:object="${profileForm}" method="post">
+      <button type="submit" name="home">home</button>
+      <button type="submit" name="exit">exit</button>
+      <p>ようこそ<span th:text="*{name}">あなた</span>さん</p>
+      <p><span th:text="*{age}">20</span>歳なんですね。</p>
+      <p>定年まで<span th:text="*{untilRetire}">40</span>年ですね。</p>
+    </form>
+  </body>
+</html>

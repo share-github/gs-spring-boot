@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Name</title>
+  </head>
+  <body>
+    <form th:action="@{/profile/age}" method="post">
+      <p>
+        <label for="name">名前を入力してください</label>
+        <input type="text" name="name" id="name" />
+      </p>
+      <p>
+        <input type="submit" value="次へ" />
+      </p>
+    </form>
+  </body>
+</html>

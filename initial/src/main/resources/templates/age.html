@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Age</title>
+  </head>
+  <body>
+    <form th:action="@{/profile/hello}" th:object="${profileForm}" method="post">
+      <p>
+        <label for="age"
+          ><span th:text="*{name}">あなた</span>さんの年齢を入力してください</label
+        >
+        <input type="text" name="age" id="age" />
+      </p>
+      <p>
+        <input type="submit" value="次へ" />
+      </p>
+    </form>
+  </body>
+</html>

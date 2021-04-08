@@ -15,7 +15,10 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.jetbrains:annotations:20.1.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest-library', version: '2.2'
 }
 
 test {
